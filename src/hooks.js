@@ -13,3 +13,16 @@ export const useModal =()=>{
     return{getCurrentStatus, changeCurrentStatus}
 }
 
+export const useDarkMode =()=>{
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const getCurrentStatus =()=>{
+        return isDarkMode;
+    }
+
+    const changeCurrentStatus =() =>{
+        setIsDarkMode(!isDarkMode);
+        }
+    return{getCurrentStatus, changeCurrentStatus}
+}
+
